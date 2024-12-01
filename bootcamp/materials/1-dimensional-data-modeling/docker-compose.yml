@@ -27,6 +27,7 @@ services:
       - "${PGADMIN_PORT}:80"
     volumes:
       - pgadmin-data:/var/lib/pgadmin
-      - ./pgadmin_queries:/var/lib/pgadmin/storage     
+      - ./pgadmin_queries:/var/lib/pgadmin/storage    
 volumes:
   postgres-data:
+  pgadmin-data:
